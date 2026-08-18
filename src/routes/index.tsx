@@ -37,7 +37,65 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const PHONE = "(905) 555-0173";
+const PHONE = "(647) 992-7114";
+const EMAIL = "info@diamondrenovation.ca";
+
+const GALLERY = [
+  {
+    src: frontYardAerial,
+    title: "Front yard rebuild",
+    meta: "Timber wall · beds · walkway",
+    alt: "Aerial view of a finished front yard with a timber retaining wall, planted beds and a new stone walkway",
+  },
+  {
+    src: retainingWallBuild,
+    title: "Retaining wall build",
+    meta: "Excavation to finished course",
+    alt: "Newly built pressure-treated timber retaining wall wrapping a backyard grade",
+  },
+  {
+    src: flagstonePoolPatio,
+    title: "Flagstone pool surround",
+    meta: "Laid, levelled, swept",
+    alt: "Natural flagstone patio curving around the edge of a backyard pool",
+  },
+  {
+    src: frontRetainingWall,
+    title: "Street-side wall & beds",
+    meta: "Grading, wall, planting",
+    alt: "Long timber retaining wall holding a mulched garden bed along a residential street",
+  },
+  {
+    src: backyardSodSteps,
+    title: "Backyard reset",
+    meta: "Fresh sod & cedar steps",
+    alt: "Backyard with fresh sod, a timber retaining wall and new cedar steps beside a screened gazebo",
+  },
+  {
+    src: poolsideGardenBed,
+    title: "Poolside garden bed",
+    meta: "Armour stone & mulch",
+    alt: "Poolside garden bed edged with armour stone and finished in black mulch",
+  },
+  {
+    src: glassRailingBalcony,
+    title: "Glass balcony railing",
+    meta: "Install & waterproof detail",
+    alt: "Glass and aluminum balcony railing installed above a park at sunset",
+  },
+  {
+    src: vinylPlankTrim,
+    title: "Interior flooring & trim",
+    meta: "Plank flooring, baseboard",
+    alt: "Wide-plank vinyl flooring meeting freshly installed white baseboard trim",
+  },
+  {
+    src: treeMulchBed,
+    title: "Tree ring & cleanup",
+    meta: "Small jobs, same standard",
+    alt: "Freshly cut and mulched tree ring in a tidy backyard lawn",
+  },
+];
 
 const FACETS: { id: string; label: string; points: string }[] = [
   { id: "f1", label: "Kitchens & Bathrooms", points: "100,20 160,70 130,70" },
