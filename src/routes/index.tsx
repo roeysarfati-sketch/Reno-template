@@ -380,12 +380,21 @@ function Index() {
       <section
         id="top"
         className="relative flex min-h-screen items-center overflow-hidden pt-26"
-        style={{
-          background:
-            "radial-gradient(ellipse 65% 55% at 78% 18%, oklch(0.877 0.062 210 / 0.10), transparent 60%), radial-gradient(ellipse 50% 40% at 15% 85%, oklch(0.746 0.093 78 / 0.08), transparent 60%), var(--obsidian)",
-        }}
+        style={{ background: "var(--obsidian)" }}
       >
-        <div className="wrap grid w-full items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+        <img
+          src={frontYardAerial}
+          alt="Completed front yard renovation with timber retaining wall, garden beds and stone walkway"
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-25"
+        />
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 65% 55% at 78% 18%, oklch(0.877 0.062 210 / 0.12), transparent 60%), linear-gradient(100deg, var(--obsidian) 18%, oklch(0.145 0.006 285 / 0.82) 55%, oklch(0.145 0.006 285 / 0.62))",
+          }}
+        />
+        <div className="wrap relative grid w-full items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="eyebrow">Aurora &amp; the Greater Toronto Area</p>
             <h1 className="my-6 text-[clamp(2.6rem,5.4vw,4.5rem)]">
