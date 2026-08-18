@@ -11,6 +11,15 @@ import {
   Receipt,
   ArrowRight,
 } from "lucide-react";
+import frontYardAerial from "@/assets/work/front-yard-aerial.jpg";
+import retainingWallBuild from "@/assets/work/retaining-wall-build.jpg";
+import flagstonePoolPatio from "@/assets/work/flagstone-pool-patio.jpg";
+import frontRetainingWall from "@/assets/work/front-retaining-wall.jpg";
+import backyardSodSteps from "@/assets/work/backyard-sod-steps.jpg";
+import poolsideGardenBed from "@/assets/work/poolside-garden-bed.jpg";
+import glassRailingBalcony from "@/assets/work/glass-railing-balcony.jpg";
+import vinylPlankTrim from "@/assets/work/vinyl-plank-trim.jpg";
+import treeMulchBed from "@/assets/work/tree-mulch-bed.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
