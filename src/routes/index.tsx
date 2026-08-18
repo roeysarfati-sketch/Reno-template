@@ -25,20 +25,20 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Diamond Renovations — Renovations Cut to Precision | Aurora & GTA" },
+      { title: "Diamond Renovations — We Make Your House a Home | Aurora & GTA" },
       {
         name: "description",
         content:
-          "Owner-run renovation crew led by Tyler. Kitchens, bathrooms, retaining walls, plumbing repairs and 24/7 emergency service across Aurora and the GTA.",
+          "Owner-run general contractor led by Tyler Ironmonger in Holland Landing. Retaining walls, landscaping, renovations, repairs and 24 hour emergency service across the GTA.",
       },
       {
         property: "og:title",
-        content: "Diamond Renovations — Renovations Cut to Precision",
+        content: "Diamond Renovations — We Make Your House a Home",
       },
       {
         property: "og:description",
         content:
-          "Fair quotes, honest timelines, and work finished the way it was promised. Free quotes across Aurora, Newmarket, Richmond Hill & the GTA.",
+          "5.0-rated, owner-run contractor. Fair quotes, honest timelines, 24 hour emergency service across Holland Landing, Aurora, Newmarket and the GTA.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
