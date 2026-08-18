@@ -11,25 +11,34 @@ import {
   Receipt,
   ArrowRight,
 } from "lucide-react";
+import frontYardAerial from "@/assets/work/front-yard-aerial.jpg";
+import retainingWallBuild from "@/assets/work/retaining-wall-build.jpg";
+import flagstonePoolPatio from "@/assets/work/flagstone-pool-patio.jpg";
+import frontRetainingWall from "@/assets/work/front-retaining-wall.jpg";
+import backyardSodSteps from "@/assets/work/backyard-sod-steps.jpg";
+import poolsideGardenBed from "@/assets/work/poolside-garden-bed.jpg";
+import glassRailingBalcony from "@/assets/work/glass-railing-balcony.jpg";
+import vinylPlankTrim from "@/assets/work/vinyl-plank-trim.jpg";
+import treeMulchBed from "@/assets/work/tree-mulch-bed.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Diamond Renovations — Renovations Cut to Precision | Aurora & GTA" },
+      { title: "Diamond Renovations — We Make Your House a Home | Aurora & GTA" },
       {
         name: "description",
         content:
-          "Owner-run renovation crew led by Tyler. Kitchens, bathrooms, retaining walls, plumbing repairs and 24/7 emergency service across Aurora and the GTA.",
+          "Owner-run general contractor led by Tyler Ironmonger in Holland Landing. Retaining walls, landscaping, renovations, repairs and 24 hour emergency service across the GTA.",
       },
       {
         property: "og:title",
-        content: "Diamond Renovations — Renovations Cut to Precision",
+        content: "Diamond Renovations — We Make Your House a Home",
       },
       {
         property: "og:description",
         content:
-          "Fair quotes, honest timelines, and work finished the way it was promised. Free quotes across Aurora, Newmarket, Richmond Hill & the GTA.",
+          "5.0-rated, owner-run contractor. Fair quotes, honest timelines, 24 hour emergency service across Holland Landing, Aurora, Newmarket and the GTA.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -37,7 +46,65 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const PHONE = "(905) 555-0173";
+const PHONE = "(647) 992-7114";
+const EMAIL = "info@diamondrenovation.ca";
+
+const GALLERY = [
+  {
+    src: frontYardAerial,
+    title: "Front yard rebuild",
+    meta: "Timber wall · beds · walkway",
+    alt: "Aerial view of a finished front yard with a timber retaining wall, planted beds and a new stone walkway",
+  },
+  {
+    src: retainingWallBuild,
+    title: "Retaining wall build",
+    meta: "Excavation to finished course",
+    alt: "Newly built pressure-treated timber retaining wall wrapping a backyard grade",
+  },
+  {
+    src: flagstonePoolPatio,
+    title: "Flagstone pool surround",
+    meta: "Laid, levelled, swept",
+    alt: "Natural flagstone patio curving around the edge of a backyard pool",
+  },
+  {
+    src: frontRetainingWall,
+    title: "Street-side wall & beds",
+    meta: "Grading, wall, planting",
+    alt: "Long timber retaining wall holding a mulched garden bed along a residential street",
+  },
+  {
+    src: backyardSodSteps,
+    title: "Backyard reset",
+    meta: "Fresh sod & cedar steps",
+    alt: "Backyard with fresh sod, a timber retaining wall and new cedar steps beside a screened gazebo",
+  },
+  {
+    src: poolsideGardenBed,
+    title: "Poolside garden bed",
+    meta: "Armour stone & mulch",
+    alt: "Poolside garden bed edged with armour stone and finished in black mulch",
+  },
+  {
+    src: glassRailingBalcony,
+    title: "Glass balcony railing",
+    meta: "Install & waterproof detail",
+    alt: "Glass and aluminum balcony railing installed above a park at sunset",
+  },
+  {
+    src: vinylPlankTrim,
+    title: "Interior flooring & trim",
+    meta: "Plank flooring, baseboard",
+    alt: "Wide-plank vinyl flooring meeting freshly installed white baseboard trim",
+  },
+  {
+    src: treeMulchBed,
+    title: "Tree ring & cleanup",
+    meta: "Small jobs, same standard",
+    alt: "Freshly cut and mulched tree ring in a tidy backyard lawn",
+  },
+];
 
 const FACETS: { id: string; label: string; points: string }[] = [
   { id: "f1", label: "Kitchens & Bathrooms", points: "100,20 160,70 130,70" },
@@ -286,6 +353,7 @@ function Index() {
               ["Services", "#services"],
               ["The Standard", "#standard"],
               ["Process", "#process"],
+              ["Work", "#work"],
               ["Reviews", "#reviews"],
               ["Contact", "#contact"],
             ].map(([label, href]) => (
@@ -313,12 +381,21 @@ function Index() {
       <section
         id="top"
         className="relative flex min-h-screen items-center overflow-hidden pt-26"
-        style={{
-          background:
-            "radial-gradient(ellipse 65% 55% at 78% 18%, oklch(0.877 0.062 210 / 0.10), transparent 60%), radial-gradient(ellipse 50% 40% at 15% 85%, oklch(0.746 0.093 78 / 0.08), transparent 60%), var(--obsidian)",
-        }}
+        style={{ background: "var(--obsidian)" }}
       >
-        <div className="wrap grid w-full items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+        <img
+          src={frontYardAerial}
+          alt="Completed front yard renovation with timber retaining wall, garden beds and stone walkway"
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-25"
+        />
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 65% 55% at 78% 18%, oklch(0.877 0.062 210 / 0.12), transparent 60%), linear-gradient(100deg, var(--obsidian) 18%, oklch(0.145 0.006 285 / 0.82) 55%, oklch(0.145 0.006 285 / 0.62))",
+          }}
+        />
+        <div className="wrap relative grid w-full items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="eyebrow">Aurora &amp; the Greater Toronto Area</p>
             <h1 className="my-6 text-[clamp(2.6rem,5.4vw,4.5rem)]">
@@ -327,7 +404,7 @@ function Index() {
               <em className="facet-text">cut to precision.</em>
             </h1>
             <p className="mb-8 max-w-[38ch] text-[1.08rem] text-platinum">
-              Diamond Renovations is a small, owner-run crew led by Tyler — built on fair quotes,
+              Diamond Renovations is a small, owner-run crew led by Tyler Ironmonger — built on fair quotes,
               honest timelines, and work that's finished the way it was promised. From a single
               loose faucet to a full backyard rebuild.
             </p>
@@ -462,6 +539,46 @@ function Index() {
         </div>
       </section>
 
+      {/* Work gallery */}
+      <section id="work" className="section">
+        <div className="wrap">
+          <div className="section-head reveal">
+            <p className="eyebrow">Recent Work</p>
+            <h2>Jobs finished across the GTA.</h2>
+            <p>
+              Retaining walls, stonework, yard rebuilds, railings and interior finishing — photos
+              straight from Tyler&apos;s job sites.
+            </p>
+          </div>
+          <div className="grid-hairline reveal grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
+            {GALLERY.map((g) => (
+              <figure key={g.title} className="group relative overflow-hidden bg-background">
+                <img
+                  src={g.src}
+                  alt={g.alt}
+                  loading="lazy"
+                  className="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  style={{ transitionTimingFunction: "var(--ease)" }}
+                />
+                <figcaption
+                  className="absolute inset-x-0 bottom-0 px-6 py-5"
+                  style={{
+                    background:
+                      "linear-gradient(to top, oklch(0.145 0.006 285 / 0.94), transparent)",
+                  }}
+                >
+                  <h3 className="text-[1.02rem]">{g.title}</h3>
+                  <p className="mt-1 font-mono text-[0.7rem] uppercase tracking-[0.1em] text-platinum-dim">
+                    {g.meta}
+                  </p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       {/* Reviews */}
       <section id="reviews" className="band section">
         <div className="wrap">
@@ -536,8 +653,8 @@ function Index() {
             <div className="mt-9 flex flex-col gap-7">
               {[
                 [<Phone key="p" className="mt-0.5 h-5 w-5 flex-none text-ice" />, "Phone", `${PHONE} — 24/7 for emergencies`],
-                [<Mail key="m" className="mt-0.5 h-5 w-5 flex-none text-ice" />, "Email", "hello@diamondrenovations.ca"],
-                [<MapPin key="l" className="mt-0.5 h-5 w-5 flex-none text-ice" />, "Service Area", "Aurora, Newmarket, Richmond Hill & the wider GTA"],
+                [<Mail key="m" className="mt-0.5 h-5 w-5 flex-none text-ice" />, "Email", EMAIL],
+                [<MapPin key="l" className="mt-0.5 h-5 w-5 flex-none text-ice" />, "Service Area", "Holland Landing & East Gwillimbury, Aurora, Newmarket, Richmond Hill & the wider GTA"],
               ].map(([icon, title, body], i) => (
                 <div key={i} className="flex items-start gap-4">
                   {icon}
@@ -560,7 +677,7 @@ function Index() {
             </div>
             <div className="field">
               <label htmlFor="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" placeholder="(905) 000-0000" />
+              <input id="phone" name="phone" type="tel" placeholder="(647) 000-0000" />
             </div>
             <div className="field sm:col-span-2">
               <label htmlFor="email">Email</label>
@@ -608,8 +725,8 @@ function Index() {
               <a href="#services" className="hover:text-foreground">
                 Services
               </a>
-              <a href="#reviews" className="hover:text-foreground">
-                Reviews
+              <a href="#work" className="hover:text-foreground">
+                Work
               </a>
               <a href="#contact" className="hover:text-foreground">
                 Contact
@@ -617,8 +734,8 @@ function Index() {
             </div>
           </div>
           <p className="mt-6 text-[0.78rem] text-platinum-dim">
-            © 2026 Diamond Renovations. Owner-operated by Tyler. Serving Aurora & the Greater
-            Toronto Area, 24/7.
+            © 2026 Diamond Renovations. Owner-operated by Tyler Ironmonger, Holland Landing, ON.
+            Serving Aurora & the Greater Toronto Area, 24/7.
           </p>
         </div>
       </footer>
