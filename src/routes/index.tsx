@@ -538,6 +538,46 @@ function Index() {
         </div>
       </section>
 
+      {/* Work gallery */}
+      <section id="work" className="band section">
+        <div className="wrap">
+          <div className="section-head reveal">
+            <p className="eyebrow">Recent Work</p>
+            <h2>Jobs finished across the GTA.</h2>
+            <p>
+              Retaining walls, stonework, yard rebuilds, railings and interior finishing — photos
+              straight from Tyler&apos;s job sites.
+            </p>
+          </div>
+          <div className="grid-hairline reveal grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
+            {GALLERY.map((g) => (
+              <figure key={g.title} className="group relative overflow-hidden bg-background">
+                <img
+                  src={g.src}
+                  alt={g.alt}
+                  loading="lazy"
+                  className="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  style={{ transitionTimingFunction: "var(--ease)" }}
+                />
+                <figcaption
+                  className="absolute inset-x-0 bottom-0 px-6 py-5"
+                  style={{
+                    background:
+                      "linear-gradient(to top, oklch(0.145 0.006 285 / 0.94), transparent)",
+                  }}
+                >
+                  <h3 className="text-[1.02rem]">{g.title}</h3>
+                  <p className="mt-1 font-mono text-[0.7rem] uppercase tracking-[0.1em] text-platinum-dim">
+                    {g.meta}
+                  </p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       {/* Reviews */}
       <section id="reviews" className="band section">
         <div className="wrap">
