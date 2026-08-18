@@ -353,6 +353,7 @@ function Index() {
               ["Services", "#services"],
               ["The Standard", "#standard"],
               ["Process", "#process"],
+              ["Work", "#work"],
               ["Reviews", "#reviews"],
               ["Contact", "#contact"],
             ].map(([label, href]) => (
@@ -403,7 +404,7 @@ function Index() {
               <em className="facet-text">cut to precision.</em>
             </h1>
             <p className="mb-8 max-w-[38ch] text-[1.08rem] text-platinum">
-              Diamond Renovations is a small, owner-run crew led by Tyler — built on fair quotes,
+              Diamond Renovations is a small, owner-run crew led by Tyler Ironmonger — built on fair quotes,
               honest timelines, and work that's finished the way it was promised. From a single
               loose faucet to a full backyard rebuild.
             </p>
@@ -652,8 +653,8 @@ function Index() {
             <div className="mt-9 flex flex-col gap-7">
               {[
                 [<Phone key="p" className="mt-0.5 h-5 w-5 flex-none text-ice" />, "Phone", `${PHONE} — 24/7 for emergencies`],
-                [<Mail key="m" className="mt-0.5 h-5 w-5 flex-none text-ice" />, "Email", "hello@diamondrenovations.ca"],
-                [<MapPin key="l" className="mt-0.5 h-5 w-5 flex-none text-ice" />, "Service Area", "Aurora, Newmarket, Richmond Hill & the wider GTA"],
+                [<Mail key="m" className="mt-0.5 h-5 w-5 flex-none text-ice" />, "Email", EMAIL],
+                [<MapPin key="l" className="mt-0.5 h-5 w-5 flex-none text-ice" />, "Service Area", "Holland Landing & East Gwillimbury, Aurora, Newmarket, Richmond Hill & the wider GTA"],
               ].map(([icon, title, body], i) => (
                 <div key={i} className="flex items-start gap-4">
                   {icon}
@@ -676,7 +677,7 @@ function Index() {
             </div>
             <div className="field">
               <label htmlFor="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" placeholder="(905) 000-0000" />
+              <input id="phone" name="phone" type="tel" placeholder="(647) 000-0000" />
             </div>
             <div className="field sm:col-span-2">
               <label htmlFor="email">Email</label>
@@ -724,8 +725,8 @@ function Index() {
               <a href="#services" className="hover:text-foreground">
                 Services
               </a>
-              <a href="#reviews" className="hover:text-foreground">
-                Reviews
+              <a href="#work" className="hover:text-foreground">
+                Work
               </a>
               <a href="#contact" className="hover:text-foreground">
                 Contact
@@ -733,8 +734,8 @@ function Index() {
             </div>
           </div>
           <p className="mt-6 text-[0.78rem] text-platinum-dim">
-            © 2026 Diamond Renovations. Owner-operated by Tyler. Serving Aurora & the Greater
-            Toronto Area, 24/7.
+            © 2026 Diamond Renovations. Owner-operated by Tyler Ironmonger, Holland Landing, ON.
+            Serving Aurora & the Greater Toronto Area, 24/7.
           </p>
         </div>
       </footer>
