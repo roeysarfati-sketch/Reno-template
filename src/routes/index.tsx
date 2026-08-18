@@ -539,7 +539,7 @@ function Index() {
       </section>
 
       {/* Work gallery */}
-      <section id="work" className="band section">
+      <section id="work" className="section">
         <div className="wrap">
           <div className="section-head reveal">
             <p className="eyebrow">Recent Work</p>
